@@ -11,6 +11,7 @@
   width: max(23vw,330px);
   color: #808080;
   background-color: white;
+  
   display: flex;
   flex-direction: column;
   gap: 25px;
