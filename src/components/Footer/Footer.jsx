@@ -6,10 +6,9 @@ const Footer = () => {
     <div className='footer' id='footer'>
       <div className="footer-content">
         <div className='footer-content-left'>
-          <img src={assets.logo} alt="" />
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sit blanditiis 
-            consequuntur omnis impedit alias eligendi ut voluptatibus inventore temporibus. Lorem ipsum dolor sit amet consectetur
-             adipisicing elit. Officia, repellendus!</p>
+          {/* <img src={assets.logo} alt="" /> */}
+          <h1 className='footer-title'>Foodster.</h1>
+          <p>At Foodster, we bring delicious meals from your favorite restaurents straight to your door. Whether you're craving something spicy, sweet, or healthy we've got you covered. Fast delivery, fresh ingredients, and flavour you'll love!</p>
             <div className="footer-social-icons">
               <img src={assets.facebook_icon} alt="" />
               <img src={assets.twitter_icon} alt="" />
@@ -29,12 +28,12 @@ const Footer = () => {
           <h2>GET IN TOUCH</h2>
           <ul>
             <li>+91-222-333-4440</li>
-            <li>contact@tomato.com</li>
+            <li>Foodster@gmail.com</li>
           </ul>
         </div>
       </div>
       <hr />
-      <p className="footer-copyright">Copyright 2024 Lorem ipsum dolor sit amet.</p>
+      <p className="footer-copyright">Copyright &copy; 2024 Foodster. All rights reserved.</p>
     </div>
   )
 }

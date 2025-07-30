@@ -26,6 +26,10 @@
   margin-bottom: 10px;
   cursor: pointer;
 }
+.footer-content-left .footer-title{
+  font-size: max(3.2vw,15px);
+  color: tomato;
+}
 
 .footer-content-right h2,.footer-content-center h2{
   color: white;

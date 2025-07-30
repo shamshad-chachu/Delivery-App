@@ -9,7 +9,10 @@ const Navber = ({setShowLogin}) => {
  const {getTotalCartAmount} = useContext(StoreContext)
   return (
     <div className='navbar'>
-      <Link to='/'><img src={assets.logo} alt="" className="logo" /></Link>
+      <Link to='/'>
+      {/* <img src={assets.logo} alt="" className="logo" /> */}
+      <h3 className='navbar-logo'>Foodster.</h3>
+      </Link>
       <ul className="navbar-menue">
         <Link to='/' onClick={()=>setMenue("home")} className={menue === 'home'?'active':''}>Home</Link>
         <a href='#explore-menu' onClick={()=>setMenue("menue")} className={menue === 'menue'?'active':''}>Menue</a>

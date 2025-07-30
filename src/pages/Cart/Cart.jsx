@@ -25,9 +25,9 @@ const Cart = () => {
                 <div className="cart-items-title cart-items-item">
                   <img src={item.image} alt="" />
                   <p>{item.name}</p>
-                  <p>${item.price}</p>
+                  <p>₹{item.price}</p>
                   <p>{cartItems[item._id]}</p>
-                  <p>${item.price * cartItems[item._id]}</p>
+                  <p>₹{item.price * cartItems[item._id]}</p>
                   <p className="cross" onClick={()=>removeFromCart(item._id)}>X</p>
                 </div>
                 <hr />
@@ -42,18 +42,18 @@ const Cart = () => {
           <div>
           <div className="cart-total-details">
             <p>Subtotal</p>
-          <p>${getTotalCartAmount()}</p>
+          <p>₹{getTotalCartAmount()}</p>
           </div>
           <hr />
           <div className="cart-total-details">
             <p>Delivery Free</p>
-            <span className={getTotalCartAmount()>50?"free-delivery":"dlivery-charge"}>{getTotalCartAmount()>50?"Free":'Free Delivery above $50'}</span> 
-            <p>${getTotalCartAmount()>50?0:50}</p>
+            <span className={getTotalCartAmount()>99?"free-delivery":"dlivery-charge"}>{getTotalCartAmount()>99?"Free":'Free Delivery above $99'}</span> 
+            <p>₹{getTotalCartAmount()>99?0:49}</p>
           </div>
           <hr />
           <div className="cart-total-details">
             <b>Total</b>
-            <b>${getTotalCartAmount()>50?getTotalCartAmount()+0:getTotalCartAmount()+50}</b>
+            <b>₹{getTotalCartAmount()>99?getTotalCartAmount()+0:getTotalCartAmount()>0?getTotalCartAmount()+99:0}</b>
           </div>
           </div>
           <button onClick={()=>navigate('/order')}>PROCEED TO CHECKOUT</button>
